@@ -10,8 +10,8 @@ function getRandomInt(max) {
 export default function Header(){
 
     const desc = reactDescriptions[getRandomInt(reactDescriptions.length) - 1];
-    console.log(getRandomInt(reactDescriptions.length - 1));
-    console.log(desc);
+    //console.log(getRandomInt(reactDescriptions.length - 1));
+    //console.log(desc);
   
     return(
     <header>
