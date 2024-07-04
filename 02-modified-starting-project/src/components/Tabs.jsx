@@ -1,9 +1,10 @@
-export default function Tabs({ children, buttons }) {
+export default function Tabs({ children, buttons, wrapperType }) {
+    const WrapperType = wrapperType;
     return(
         <>
-            <menu>
+            <WrapperType>
                 {buttons}
-            </menu>
+            </WrapperType>
             {children}
         </>
     )

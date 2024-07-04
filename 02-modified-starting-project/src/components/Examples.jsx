@@ -15,7 +15,7 @@ export default function Examples() {
         <Section title="Examples" id='examples'>
             {/* The following section utilizes a component which takes in JSX code as props (can take in as many possible) to render it on the page. This is 
             probably called slotting, because the component can "slot" as many jsx code and components inside it. */}
-            <Tabs buttons={<>
+            <Tabs wrapperType="menu" buttons={<>
                 <TabButton isSelected={selectedTopic === 'components'} onClick={() => handleSelect('components')}>Component</TabButton>
                 <TabButton isSelected={selectedTopic === 'jsx'} onClick={() => handleSelect('jsx')}>JSX</TabButton>
                 <TabButton isSelected={selectedTopic === 'props'} onClick={() => handleSelect('props')}>Props</TabButton>
