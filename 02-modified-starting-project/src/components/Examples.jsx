@@ -1,4 +1,5 @@
 import TabButton from "./TabButton"
+import Section from "./Section";
 import { useState } from "react"
 import { EXAMPLES } from "../data";
 
@@ -10,8 +11,7 @@ export default function Examples() {
     //console.log(selectedTopic)  --- setSelectedButton first updates the page (runs App()) and then updates the selectedTopic state value
 }
     return(
-        <section id='examples'>
-          <h2>Examples</h2>
+        <Section title="Examples" id='examples'>
           <menu>
             <TabButton isSelected={selectedTopic === 'components'} onSelect={() => handleSelect('components')}>Component</TabButton>
             <TabButton isSelected={selectedTopic === 'jsx'} onSelect={() => handleSelect('jsx')}>JSX</TabButton>
@@ -34,6 +34,6 @@ export default function Examples() {
           {/* A third way is to use a variable outside the return statement - store the JSX code, update the 
           variable with suitable JSX if state exists and render the variable within the returned JSX */}
 
-        </section>
+        </Section>
     )
 }
